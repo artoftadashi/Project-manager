@@ -8,7 +8,7 @@ export default function ProjectsSidebar({
   selectedProjectId,
 }) {
   return (
-    <aside className="w-1/3 px-8 py-16 bg-stone-900 text-stone-50 md:w-72 rounded-r-xl">
+    <aside className="w-1/3 px-8 py-16 bg-vdark/30 backdrop-blur-md text-stone-50 md:w-60 rounded-r-xl">
       <h2 className="mb-8 font-bold uppercase md:text-xl text-stone-200">
         {" "}
         Your projects
@@ -19,12 +19,13 @@ export default function ProjectsSidebar({
       <ul className="mt-8">
         {projects.map((project) => {
           let styles =
-            "w-full text-left px-2 py-2 rounded-md my-1 hover:text-stone-200 hover:bg-stone-800";
+            "w-full text-left px-2 py-2 rounded-xl my-1 hover:text-stone-100 hover:bg-myorange-100 ";
 
           if (project.id === selectedProjectId) {
-            styles += " bg-stone-800 text-stone-200";
+            styles +=
+              " bg-myorange-100 text-stone-100 animate-pulse duration-350";
           } else {
-            styles += " text-stone-400";
+            styles += " text-stone-200";
           }
 
           return (
