@@ -7,7 +7,7 @@ export default function NoProjectSelected({ onStartAddProject }) {
       <img
         src={noProjectImage}
         alt="An empty task list"
-        className="w-16 h-16 object-contain mx-auto"
+        className="w-16 h-16 object-contain mx-auto animate-bounce"
       />
       <h2 className="text-2xl font-bold text-stone-100 my-4">
         No Project Selected
